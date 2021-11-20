@@ -9,8 +9,8 @@ function start() {
   document.getElementById('musicid').src = "/music/"+music[cmusic];
   document.getElementById('mname').innerHTML = musicname[cmusic];
   document.getElementById('img').src = "/pics/"+musicpic[cmusic];
-
-}
-document.getElementById("music").onended = function() {
+  document.getElementById("music").onended = function() {
   start();
-};
+  };
+}
+
