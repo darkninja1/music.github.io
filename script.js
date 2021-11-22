@@ -11,10 +11,10 @@ function start() {
     start();
   }
   else {
-    document.getElementById('musicid').src = "music/"+music[cmusic];
+    document.getElementById('musicid').src = "/music/"+music[cmusic];
     document.getElementById('mname').innerHTML = musicname[cmusic];
     pre = musicname[cmusic];
-    document.getElementById('img').src = "pics/"+musicpic[cmusic];
+    document.getElementById('img').src = "/pics/"+musicpic[cmusic];
     document.getElementById('img2').style.backgroundImage = "url('pics/"+musicpic[cmusic]+"')";
     
     document.getElementById("music").load();
