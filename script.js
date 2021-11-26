@@ -6,7 +6,7 @@ var pre = [];
 function start() {
   document.getElementById('login').style.display = 'none';
   document.getElementById('img').style.display = 'block';
-  document.getElementById('pause').style.display = "block";
+  document.getElementById('pp').style.display = "block";
   var cmusic = Math.floor(Math.random() * music.length);
   if (pre.length == music.length) {
     pre = [];
@@ -37,5 +37,5 @@ function pause() {
 function play() {
   document.getElementById("music").play();
   document.getElementById('pause').style.display = "none";
-  document.getElementById('pause').style.display = "block";
+  document.getElementById('pp').style.display = "block";
 }
