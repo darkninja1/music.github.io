@@ -17,8 +17,11 @@
 <span id='mname'></span>
 
 <img id='img' src="" onclick='start()'/>
+<div class='barh'>
+  <div id='bar'></div>
+</div>
 
-<audio class='audio' id='music' style="display:none;">
+<audio class='audio' id='music' style="display:none;" ontimeupdate="document.getElementById('bar').style.width = ((Math.floor(this.currentTime) / Math.floor(this.duration))*100) +'%';">
         <source id='musicid' src='' type='audio/mpeg'>
 </audio>
 
