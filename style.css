@@ -40,6 +40,7 @@ body {
   height:100%;
   position:absolute;
   cursor:pointer;
+  z-index:300;
   display:none;
 }
 #pause h1 {
