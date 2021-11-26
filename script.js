@@ -39,3 +39,17 @@ function play() {
   document.getElementById('pause').style.display = "none";
   document.getElementById('pp').style.display = "block";
 }
+function vol() {
+  var iv = document.getElementById("slide").value;
+  if (iv >= 75) {
+    document.getElementById('vol').innerHTML = "🔊";
+  }
+  else if (iv >= 30) {
+    document.getElementById('vol').innerHTML = "🔉";
+  }
+  else {
+    document.getElementById('vol').innerHTML = "🔈";
+  }
+
+  document.getElementById("music").volume = (iv/100);
+}
