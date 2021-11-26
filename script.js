@@ -9,6 +9,7 @@ function start() {
   var cmusic = Math.floor(Math.random() * music.length);
   if (pre.length == music.length) {
     pre = [];
+    start();
   }
   else if (pre.includes(musicname[cmusic])) {
     start();
