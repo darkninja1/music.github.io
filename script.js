@@ -28,4 +28,9 @@ function start() {
     };
   }
 }
-
+function pause() {
+  document.getElementById("music").pause();
+}
+function play() {
+  document.getElementById("music").play();
+}
