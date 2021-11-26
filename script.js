@@ -16,10 +16,10 @@ function start() {
     start();
   }
   else {
-    document.getElementById('musicid').src = "/music.github.io/music/"+music[cmusic];
+    document.getElementById('musicid').src = "/main/music/"+music[cmusic];
     document.getElementById('mname').innerHTML = musicname[cmusic];
     pre.push(musicname[cmusic]);
-    document.getElementById('img').src = "/music.github.io/pics/"+musicpic[cmusic];
+    document.getElementById('img').src = "/main/pics/"+musicpic[cmusic];
     document.getElementById('img2').style.backgroundImage = "url('pics/"+musicpic[cmusic]+"')";
     
     document.getElementById("music").load();
