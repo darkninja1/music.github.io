@@ -14,6 +14,7 @@ body {
   filter:blur(10px);
 }
 #login {
+  z-index:3;
   background-color:black;
   color:rgb(224, 221, 211);
   width:100%;
@@ -114,6 +115,7 @@ body {
   cursor:pointer;
 }
 #slide {
+  z-index:2;
   position: fixed;
   bottom:0px;
   right:0px;
@@ -136,6 +138,7 @@ body {
   opacity: 1; /* Fully shown on mouse-over */
 }
 label {
+  z-index:2;
   position: fixed;
   bottom:0px;
   padding:5px 10px 5px 10px;
