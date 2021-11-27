@@ -53,6 +53,3 @@ function vol() {
 
   document.getElementById("music").volume = (iv/100);
 }
-function update(time,duration) {
-  document.getElementById('bar').style.width = (time / duration)*100) +'%';
-}
