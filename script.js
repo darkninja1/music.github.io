@@ -53,3 +53,6 @@ function vol() {
 
   document.getElementById("music").volume = (iv/100);
 }
+function up() {
+  document.getElementById('bar').style.width = ((document.getElementById('music').currentTime / document.getElementById('music').duration)*100) +'%';document.getElementById('time1').innerHTML = (parseInt(document.getElementById('music').currentTime/60)+':'+parseInt(document.getElementById('music').currentTime%60));document.getElementById('time2').innerHTML = (parseInt(document.getElementById('music').duration/60)+':'+parseInt(document.getElementById('music').duration%60));
+}
