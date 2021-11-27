@@ -68,7 +68,7 @@ function up() {
     document.getElementById('time2').innerHTML = (parseInt(dd/60)+':0'+dd1);
   }
   else {
-    document.getElementById('time2').innerHTML = (parseInt(cc/60)+':'+dd1);
+    document.getElementById('time2').innerHTML = (parseInt(dd/60)+':'+dd1);
   }
   document.getElementById('bar').style.width = ((cc / dd)*100) +'%';
 }
