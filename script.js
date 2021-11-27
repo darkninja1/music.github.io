@@ -59,7 +59,7 @@ function up() {
   var cc1 = parseInt(cc%60);
   var dd1 = parseInt(dd%60);
   if (cc1 < 9) {
-    document.getElementById('time1').innerHTML = (parseInt(cc/60)+':0'+cc1);
+    document.getElementById('time1').innerHTML = (parseInt(cc/60)+':0,'+cc1);
   }
   else {
     document.getElementById('time1').innerHTML = (parseInt(cc/60)+':'+cc1);
