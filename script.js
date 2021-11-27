@@ -65,7 +65,7 @@ function up() {
     document.getElementById('time1').innerHTML = (parseInt(cc/60)+':'+cc1);
   }
   if (dd1 <= 9) {
-    document.getElementById('time2').innerHTML = (parseInt(dd/60)+':0'+dd1);
+    document.getElementById('time2').innerHTML = (parseInt(dd/60)+':'+"0"+dd1);
   }
   else {
     document.getElementById('time2').innerHTML = (parseInt(cc/60)+':'+dd1);
