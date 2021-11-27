@@ -14,7 +14,7 @@ body {
   filter:blur(10px);
 }
 #login {
-  z-index:3;
+  z-index:300;
   background-color:black;
   color:rgb(224, 221, 211);
   width:100%;
