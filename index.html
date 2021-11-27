@@ -19,6 +19,8 @@
 <span id='pp' onclick='pause()'>Pause</span>
 <div id='img2' onclick='start()'></div>
 <span id='mname'></span>
+<span id='time1'></span>
+<span id='time2'></span>
 
 <img id='img' src="" onclick='start()'/>
 <div class='barh'>
@@ -27,7 +29,7 @@
 <label for='slide' id='vol'>🔊</label>
 <input type="range" min="0" max="100" value="100" id="slide" onchange='vol()'>
 
-<audio class='audio' id='music' style="display:none;" ontimeupdate="document.getElementById('bar').style.width = ((Math.floor(this.currentTime) / Math.floor(this.duration))*100) +'%';">
+<audio class='audio' id='music' style="display:none;" ontimeupdate="document.getElementById('bar').style.width = ((Math.floor(this.currentTime) / Math.floor(this.duration))*100) +'%';document.getElementById('time1').innerHTML = (parseInt(Math.floor(this.currentTime)/60)+':'+parseInt(Math.floor(this.currentTime)%60));document.getElementById('time2').innerHTML = (parseInt(Math.floor(this.duration)/60)+':'+parseInt(Math.floor(this.duration)%60));">
         <source id='musicid' src='' type='audio/mpeg'>
 </audio>
 
