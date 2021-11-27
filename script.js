@@ -54,5 +54,21 @@ function vol() {
   document.getElementById("music").volume = (iv/100);
 }
 function up() {
-  document.getElementById('bar').style.width = ((document.getElementById('music').currentTime / document.getElementById('music').duration)*100) +'%';document.getElementById('time1').innerHTML = (parseInt(document.getElementById('music').currentTime/60)+':'+parseInt(document.getElementById('music').currentTime%60));document.getElementById('time2').innerHTML = (parseInt(document.getElementById('music').duration/60)+':'+parseInt(document.getElementById('music').duration%60));
+  var cc = document.getElementById('music').currentTime;
+  var dd = document.getElementById('music').duration;
+  var cc1 = parseInt(cc%60);
+  var dd1 = parseInt(dd%60);
+  if (cc1 < 9) {
+    document.getElementById('time1').innerHTML = (parseInt(cc/60)+':0'+cc1);
+  }
+  else {
+    document.getElementById('time1').innerHTML = (parseInt(cc/60)+':'+cc1);
+  }
+  if (dd1 < 9) {
+    document.getElementById('time2').innerHTML = (parseInt(dd/60)+':0'+dd1);
+  }
+  else {
+    document.getElementById('time2').innerHTML = (parseInt(cc/60)+':'+dd1);
+  }
+  document.getElementById('bar').style.width = ((cc / dd)*100) +'%';
 }
