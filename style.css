@@ -154,7 +154,7 @@ label {
   left:0;
   padding:10px;
   z-index:4;
-  display:none;
+  
 }
 #time2 {
   background-color:rgba(0, 0, 0, 0.5);
@@ -164,5 +164,5 @@ label {
   right:0;
   padding:10px;
   z-index:4;
-  display:none;
+  
 }
