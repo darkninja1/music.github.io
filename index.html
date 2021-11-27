@@ -27,7 +27,7 @@
 <label for='slide' id='vol'>🔊</label>
 <input type="range" min="0" max="100" value="100" id="slide" onchange='vol()'>
 
-<audio class='audio' id='music' style="display:none;" ontimeupdate="update()">
+<audio class='audio' id='music' style="display:none;" ontimeupdate="update(Math.floor(this.currentTime), Math.floor(this.duration))">
         <source id='musicid' src='' type='audio/mpeg'>
 </audio>
 
