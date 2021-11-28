@@ -16,6 +16,7 @@ function start() {
     start();
   }
   else {
+    document.getElementById('tt').innerHTML = "Dom's Music("+musicname[cmusic]+")";
     document.getElementById('musicid').src = "music/"+music[cmusic];
     document.getElementById('mname').innerHTML = musicname[cmusic];
     pre.push(musicname[cmusic]);
