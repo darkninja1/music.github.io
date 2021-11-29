@@ -76,13 +76,14 @@ function up() {
 }
 function loop() {
   if (m1 == false) {
+    document.getElementById('loop').innerHTML = '2';
     document.getElementById("music").loop = true;
     m1 = true;
-    document.getElementById('loop').innerHTML = '2';
+    
   }
   else {
+    document.getElementById('loop').innerHTML = '1';
     document.getElementById("music").loop = false;
     m1 = false;
-    document.getElementById('loop').innerHTML = '1';
   }
 }
