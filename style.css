@@ -122,7 +122,6 @@ body {
   left:0;
   padding:10px;
   z-index:4;
-  display:none;
 }
 #loop:hover {
   color: rgb(0, 183, 255);
