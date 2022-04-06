@@ -9,9 +9,9 @@ var m1 = false;
 var logins = false;
 var mute1 = false;
 var prevol = 1;
-
+document.getElementById("slide").value = 100; 
 function start() {
-  document.getElementById('login').style.display = 'none';
+ document.getElementById('login').style.display = 'none';
   document.getElementById('img').style.display = 'block';
   document.getElementById('pp').style.display = "block";
   logins = true;
