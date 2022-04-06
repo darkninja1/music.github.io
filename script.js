@@ -45,6 +45,9 @@ document.body.onkeyup = function(e) {
   ) {
     space1();
   }
+  else if (e.key == 39) {
+    start();
+  }
 }
 function pause() {
   document.getElementById("music").pause();
