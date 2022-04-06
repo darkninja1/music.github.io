@@ -65,6 +65,11 @@ body {
   background-color:rgba(0,0,0,0.5);
   z-index:3;
 }
+#vol {
+  color:white;
+  
+}
+
 #mname {
   position: absolute; 
   top:0;
