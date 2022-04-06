@@ -45,7 +45,7 @@ document.body.onkeyup = function(e) {
   ) {
     space1();
   }
-  else if (e.key == 39) {
+  else if (e.keyCode == 39) {
     start();
   }
 }
