@@ -45,7 +45,7 @@ function pause() {
 function play() {
   document.getElementById("music").play();
   document.getElementById('pause').style.display = "none";
-  document.getElementById('pp').style.innerHTML = "<i class='material-icons' style='margin:none;padding:none;font-size:30px;transform: translate(0px, 0px);'>&#xe034;</i>";
+  document.getElementById('pp').innerHTML = "<i class='material-icons' style='margin:none;padding:none;font-size:30px;transform: translate(0px, 0px);'>&#xe034;</i>";
   document.getElementById('pp').style.display = "block";
   countd("<i class='material-icons' style='margin:none;padding:none;font-size:80px;transform: translate(0px, 0px);'>&#xe034;</i>");
 }
