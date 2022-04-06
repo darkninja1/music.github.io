@@ -45,7 +45,7 @@ body {
   display:none;
 }
 #pausep {
-  position:relative;
+  position:fixed;
   color:rgb(224, 221, 211);
   font-size:60px;
   top:40%;
