@@ -26,7 +26,7 @@ function start() {
     pre.push(musicname[cmusic]);
     document.getElementById('img').src = "npics/"+musicpic[cmusic];
     document.getElementById('img2').style.backgroundImage = "url('npics/"+musicpic[cmusic]+"') no-repeat center center fixed";
-    document.getElementById("img2").style.backgroundSize = "cover";
+    document.getElementById('img2').style.backgroundSize = "cover";
     
     
     document.getElementById("music").load();
