@@ -21,11 +21,11 @@ function start() {
   }
   else {
     document.getElementById('tt').innerHTML = "Dom's Music("+musicname[cmusic]+")";
-    document.getElementById('musicid').src = "music/"+music[cmusic];
+    document.getElementById('musicid').src = "nmusic/"+music[cmusic];
     document.getElementById('mname').innerHTML = musicname[cmusic];
     pre.push(musicname[cmusic]);
-    document.getElementById('img').src = "pics/"+musicpic[cmusic];
-    document.getElementById('img2').style.backgroundImage = "url('pics/"+musicpic[cmusic]+"')";
+    document.getElementById('img').src = "npics/"+musicpic[cmusic];
+    document.getElementById('img2').style.backgroundImage = "url('npics/"+musicpic[cmusic]+"')";
     
     document.getElementById("music").load();
     document.getElementById("music").play();
