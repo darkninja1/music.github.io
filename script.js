@@ -9,7 +9,6 @@ var m1 = false;
 var logins = false;
 var mute1 = false;
 var prevol = 1;
-var loopt = false;
 
 function start() {
  document.getElementById('login').style.display = 'none';
@@ -101,13 +100,7 @@ document.body.onkeyup = function(e) {
     mutted1();
   }
   else if (e.keyCode == 76) {
-    if (loopt == false) {
-      loopt = true;
-    }
-    else {
-      loopt = false;
-    }
-    document.getElementById('music').loop = loopt;
+    loop();
   }
   vol();
 }
