@@ -9,7 +9,7 @@ var m1 = false;
 var logins = false;
 var mute1 = false;
 var prevol = 1;
-document.getElementById("slide").value = 100; 
+
 function start() {
  document.getElementById('login').style.display = 'none';
   document.getElementById('img').style.display = 'block';
@@ -105,10 +105,10 @@ function mutted1() {
   if (mute1 == true) {
     document.getElementById("slide").value = prevol;
     mute1 = false;
-    countd(prevol*100+"%");
+    countd(prevol+"%");
   }
   else {
-    prevol = document.getElementById("slide").value/100;
+    prevol = document.getElementById("slide").value;
     document.getElementById("slide").value = 0;
     mute1 = true;
     countd("<i class='material-icons' style='margin:none;padding:none;font-size:70px;transform: translate(0px, 0px);'>&#xe04f;</i>");
