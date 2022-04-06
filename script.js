@@ -25,7 +25,7 @@ function start() {
     document.getElementById('mname').innerHTML = musicname[cmusic];
     pre.push(musicname[cmusic]);
     document.getElementById('img').src = "npics/"+musicpic[cmusic];
-    document.getElementById('img2').style.backgroundImage = "url('npics/"+musicpic[cmusic]+"') no-repeat center center fixed";
+    document.getElementById('img2').style.background = "url('npics/"+musicpic[cmusic]+"') no-repeat center center fixed";
     document.getElementById('img2').style.backgroundSize = "cover";
     
     
@@ -49,13 +49,20 @@ function play() {
 function vol() {
   var iv = document.getElementById("slide").value;
   if (iv >= 75) {
-    document.getElementById('vol').innerHTML = "🔊";
+    document.getElementById('vol').innerHTML = "<i class='material-icons' style='margin:none;padding:none;font-size:30px;transform: translate(0px, 7px);'>&#xe050;</i>";
   }
   else if (iv >= 30) {
-    document.getElementById('vol').innerHTML = "🔉";
+    //
+    document.getElementById('vol').innerHTML = "<i class='material-icons' style='margin:none;padding:none;font-size:30px;transform: translate(0px, 7px);'>&#xe04d;</i>";
+  }
+  else if (iv >= 1) {
+    document.getElementById('vol').innerHTML = "<i class='material-icons' style='margin:none;padding:none;font-size:30px;transform: translate(0px, 7px);'>&#xe04e;</i>";
+  }
+  else if (iv == 0) {
+    document.getElementById('vol').innerHTML = "<i class='material-icons' style='margin:none;padding:none;font-size:30px;transform: translate(0px, 7px);'>&#xe04f;</i>";
   }
   else {
-    document.getElementById('vol').innerHTML = "🔈";
+    document.getElementById('vol').innerHTML = "<i class='material-icons' style='margin:none;padding:none;font-size:30px;transform: translate(0px, 7px);'>&#xe050;</i>";
   }
 
   document.getElementById("music").volume = (iv/100);
@@ -81,13 +88,13 @@ function up() {
 }
 function loop() {
   if (m1 == false) {
-    document.getElementById('loop').innerHTML = '2';
+    document.getElementById('loop').innerHTML = "<i class='material-icons' style='margin:none;padding:none;font-size:20px;transform: translate(0px, 2px);'>&#xe041;</i>";
     document.getElementById("music").loop = true;
     m1 = true;
     
   }
   else {
-    document.getElementById('loop').innerHTML = '1';
+    document.getElementById('loop').innerHTML = "<i class='material-icons' style='margin:none;padding:none;font-size:20px;transform: translate(0px, 2px);'>&#xe040;</i>";
     document.getElementById("music").loop = false;
     m1 = false;
   }
