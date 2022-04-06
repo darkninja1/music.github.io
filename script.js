@@ -105,10 +105,10 @@ function mutted1() {
   if (mute1 == true) {
     document.getElementById("slide").value = prevol;
     mute1 = false;
-    countd(prevol+"%");
+    countd(prevol*100+"%");
   }
   else {
-    var prevol = document.getElementById("slide").value/100;
+    prevol = document.getElementById("slide").value/100;
     document.getElementById("slide").value = 0;
     mute1 = true;
     countd("<i class='material-icons' style='margin:none;padding:none;font-size:70px;transform: translate(0px, 0px);'>&#xe04f;</i>");
