@@ -6,11 +6,13 @@ var musicname = ["Oushitsu Kyoushi Haine Ending FULL - Doko ni Ita no sa!～Prin
 var musicpic = ["royal.jpg","kino.png","elena.jpg","detective.jpg","irregular.jpg","vanitas.jpg","jorm.jpg"];
 var pre = [];
 var m1 = false;
+var logins = false;
 
 function start() {
   document.getElementById('login').style.display = 'none';
   document.getElementById('img').style.display = 'block';
   document.getElementById('pp').style.display = "block";
+  logins = true;
   var cmusic = Math.floor(Math.random() * music.length);
   if (pre.length == music.length) {
     pre = [];
@@ -36,6 +38,14 @@ function start() {
     };
   }
 }
+document.body.onkeyup = function(e) {
+  if (e.key == " " ||
+      e.code == "Space" ||      
+      e.keyCode == 32      
+  ) {
+    space1();
+  }
+}
 function pause() {
   document.getElementById("music").pause();
   document.getElementById('pause').style.display = "block";
@@ -48,6 +58,20 @@ function play() {
   document.getElementById('pp').innerHTML = "<i class='material-icons' style='margin:none;padding:none;font-size:30px;transform: translate(0px, 0px);'>&#xe034;</i>";
   document.getElementById('pp').style.display = "block";
   countd("<i class='material-icons' style='margin:none;padding:none;font-size:70px;transform: translate(0px, 0px);'>&#xe034;</i>");
+}
+function space1() {
+  if (logins == true) {
+    var yn1 = document.getElementById("music").paused;
+    if (yn1 == true) {
+      play();
+    }
+    else {
+      pause();
+    }
+  }
+  else {
+    start();
+  }
 }
 function countd(txt) {
 document.getElementById('pausep').innerHTML = txt;
