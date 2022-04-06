@@ -7,6 +7,8 @@ var musicpic = ["royal.jpg","kino.png","elena.jpg","detective.jpg","irregular.jp
 var pre = [];
 var m1 = false;
 var logins = false;
+var mute1 = false;
+var prevol = 1;
 
 function start() {
   document.getElementById('login').style.display = 'none';
@@ -50,11 +52,66 @@ document.body.onkeyup = function(e) {
   }
   else if (e.keyCode == 189 && document.getElementById("slide").value != 0) {
     document.getElementById("slide").value -= 1;
-    vol();
   }
   else if (e.keyCode == 187 && document.getElementById("slide").value != 100) {
     document.getElementById("slide").value += 1;
-    vol();
+  }
+  else if (e.keyCode == 48) {
+    document.getElementById("slide").value = 100;
+    countd("100%");
+  }
+  else if (e.keyCode == 49) {
+    document.getElementById("slide").value = 10;
+    countd("10%");
+  }
+  else if (e.keyCode == 50) {
+    document.getElementById("slide").value = 20;
+    countd("20%");
+  }
+  else if (e.keyCode == 51) {
+    document.getElementById("slide").value = 30;
+    countd("30%");
+  }
+  else if (e.keyCode == 52) {
+    document.getElementById("slide").value = 40;
+    countd("40%");
+  }
+  else if (e.keyCode == 53) {
+    document.getElementById("slide").value = 50;
+    countd("50%");
+  }
+  else if (e.keyCode == 54) {
+    document.getElementById("slide").value = 60;
+    countd("60%");
+  }
+  else if (e.keyCode == 55) {
+    document.getElementById("slide").value = 70;
+    countd("70%");
+  }
+  else if (e.keyCode == 56) {
+    document.getElementById("slide").value = 80;
+    countd("80%");
+  }
+  else if (e.keyCode == 57) {
+    document.getElementById("slide").value = 90;
+    countd("90%");
+  }
+  else if (e.keyCode == 77) {
+    mutted1();
+  }
+  vol();
+}
+function mutted1() {
+  if (mute1 == true) {
+    document.getElementById("slide").value = prevol;
+    mute1 = false;
+    countd(prevol+"%");
+  }
+  else {
+    var prevol = document.getElementById("slide").value;
+    document.getElementById("slide").value = 0;
+    mute1 = true;
+    countd("<i class='material-icons' style='margin:none;padding:none;font-size:70px;transform: translate(0px, 0px);'>&#xe04f;</i>");
   }
 }
 function pause() {
