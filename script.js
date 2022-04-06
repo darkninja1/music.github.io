@@ -48,6 +48,12 @@ document.body.onkeyup = function(e) {
   else if (e.keyCode == 39) {
     start();
   }
+  else if (e.keyCode == 189 && document.getElementById("slide").value != 0) {
+    document.getElementById("slide").value -= 1;
+  }
+  else if (e.keyCode == 187 && document.getElementById("slide").value != 100) {
+    document.getElementById("slide").value += 1;
+  }
 }
 function pause() {
   document.getElementById("music").pause();
