@@ -1,17 +1,22 @@
-/*var music = ['ll.mp3','Hunter.mp3','Jifuragi.mp3','Night Of Sicily.mp3','Un diavolo scaccia l′altro.mp3','Code.mp3','sunshine.mp3','code.mp3','king.mp3','king2.mp3','ring.mp3','FT1.mp3'];
-var musicname = ['무법 변호사 Lawless Lawyer Main Title','Hunter x Hunter','Jifuragi','Night Of Sicily','Un diavolo scaccia l′altro','Code Gease','Mr. Sunshine','The Da Vinci Code',"The King's Avatar - 全职高手  「Extended OP」Xin Yang BY -Zhang Jie","The King's Avatar Ost Full Album",'JJ Lin – Lose Control _ Shang-Chi - The Album','FairyTail Main Theme OP1'];
-var musicpic = ['ll.png','Hunter.jpg','v3.jpg','v2.png','v1.jpeg','Code.jpg','sunshine.jpg','code.jpg','king.jpg','king2.jpg','ring.jpg','FT1.jpeg'];*/
-var music = ['royal.mp3','kino.mp3','elena.mp3','detective.mp3','irregular.mp3','vanitas.mp3','jorm.mp3','crusade.mp3','hero.mp3','world.mp3'];
-var musicname = ["Oushitsu Kyoushi Haine Ending FULL - Doko ni Ita no sa!～Prince Night ／ P4 with T「王室教師ハイネ ED」","Kino's Journey -the Beautiful World- Ending _ Satodama no Tsuki","Wandering Witch: The Journey of Elaina","The Detective is Already Dead","The Irregular at Magic High School","ヴァニタスの 手記 カルテ (Vanitasu no Karute)","Jormungand (ヨルムンガンド, Yorumungando)","Our Last Crusade or the Rise of a New World","The Legendary Hero's","World End"];
-var musicpic = ["royal.jpg","kino.png","elena.jpg","detective.jpg","irregular.jpg","vanitas.jpg","jorm.jpg","crusade.jpeg",'hero.jpg','world.jpeg'];
+var tmusic = ['ll.mp3','Hunter.mp3','Jifuragi.mp3','Night Of Sicily.mp3','Un diavolo scaccia l′altro.mp3','Code.mp3','sunshine.mp3','code.mp3','king.mp3','king2.mp3','ring.mp3','FT1.mp3'];
+var tmusicname = ['무법 변호사 Lawless Lawyer Main Title','Hunter x Hunter','Jifuragi','Night Of Sicily','Un diavolo scaccia l′altro','Code Gease','Mr. Sunshine','The Da Vinci Code',"The King's Avatar - 全职高手  「Extended OP」Xin Yang BY -Zhang Jie","The King's Avatar Ost Full Album",'JJ Lin – Lose Control _ Shang-Chi - The Album','FairyTail Main Theme OP1'];
+var tmusicpic = ['ll.png','Hunter.jpg','v3.jpg','v2.png','v1.jpeg','Code.jpg','sunshine.jpg','code.jpg','king.jpg','king2.jpg','ring.jpg','FT1.jpeg'];
+var music = ['royal.mp3','kino.mp3','elena.mp3','detective.mp3','irregular.mp3','vanitas.mp3','jorm.mp3','crusade.mp3','hero.mp3','world.mp3','magi.mp3'];
+var musicname = ["Oushitsu Kyoushi Haine Ending FULL - Doko ni Ita no sa!～Prince Night ／ P4 with T「王室教師ハイネ ED」","Kino's Journey -the Beautiful World- Ending _ Satodama no Tsuki","Wandering Witch: The Journey of Elaina","The Detective is Already Dead","The Irregular at Magic High School","ヴァニタスの 手記 カルテ (Vanitasu no Karute)","Jormungand (ヨルムンガンド, Yorumungando)","Our Last Crusade or the Rise of a New World","The Legendary Hero's","World End","Magi Opening 2"];
+var musicpic = ["royal.jpg","kino.png","elena.jpg","detective.jpg","irregular.jpg","vanitas.jpg","jorm.jpg","crusade.jpeg",'hero.jpg','world.jpeg','magi.jpg'];
 var pre = [];
 var m1 = false;
 var logins = false;
 var mute1 = false;
 var prevol = 1;
+var starty = 0;
+var currentbg = "";
+var currentbg2 = "";
 
 function start() {
- document.getElementById('login').style.display = 'none';
+  starty = 1;
+  document.getElementById('login').style.display = 'none';
+  document.getElementById('login2').style.display = 'none';
   document.getElementById('img').style.display = 'block';
   document.getElementById('pp').style.display = "block";
   logins = true;
@@ -40,6 +45,46 @@ function start() {
     };
   }
 }
+function start2() {
+  starty = 2;
+ document.getElementById('login').style.display = 'none';
+  document.getElementById('login2').style.display = 'none';
+  document.getElementById('img').style.display = 'block';
+  document.getElementById('pp').style.display = "block";
+  logins = true;
+  var cmusic = Math.floor(Math.random() * tmusic.length);
+  if (pre.length == tmusic.length) {
+    pre = [];
+    start2();
+  }
+  else if (pre.includes(tmusicname[cmusic])) {
+    start2();
+  }
+  else {
+    document.getElementById('tt').innerHTML = "Dom's Music("+tmusicname[cmusic]+")";
+    document.getElementById('musicid').src = "music/"+tmusic[cmusic];
+    document.getElementById('mname').innerHTML = tmusicname[cmusic];
+    pre.push(tmusicname[cmusic]);
+    document.getElementById('img').src = "pics/"+tmusicpic[cmusic];
+    document.getElementById('img2').style.background = "url('pics/"+tmusicpic[cmusic]+"') no-repeat center center fixed";
+    document.getElementById('img2').style.backgroundSize = "cover";
+    
+    
+    document.getElementById("music").load();
+    document.getElementById("music").play();
+    document.getElementById("music").onended = function() {
+    start2();
+    };
+  }
+}
+function start3() {
+  if (starty == 1) {
+    start();
+  }
+  else {
+    start2();
+  }
+}
 document.body.onkeyup = function(e) {
   if (e.key == " " ||
       e.code == "Space" ||      
@@ -48,7 +93,7 @@ document.body.onkeyup = function(e) {
     space1();
   }
   else if (e.keyCode == 39) {
-    start();
+    start3();
   }
   else if (e.keyCode == 189 && document.getElementById("slide").value != 0) {
     document.getElementById("slide").value -= 1;
@@ -141,7 +186,7 @@ function space1() {
     }
   }
   else {
-    start();
+    start3();
   }
 }
 function countd(txt) {
@@ -202,4 +247,31 @@ function loop() {
     document.getElementById("music").loop = false;
     m1 = false;
   }
+}
+function changer1() {
+ var t1music = Math.floor(Math.random() * tmusic.length); 
+  currentbg = "pics/"+tmusicpic[t1music];
+  document.getElementById('m1m1').style.background = "url('pics/"+tmusicpic[t1music]+"') no-repeat 20% 20%";
+   document.getElementById('m1m1').style.backgroundSize = "cover";document.getElementById('m1m1').style.animation = "mov1 5s infinite";
+}
+setInterval(changer1, 5000);
+function changer2() {
+ var t1music = Math.floor(Math.random() * music.length); 
+  currentbg2 = "npics/"+musicpic[t1music];
+  document.getElementById('m1m2').style.background = "url('npics/"+musicpic[t1music]+"') no-repeat 20% 20%";
+   document.getElementById('m1m2').style.backgroundSize = "cover";document.getElementById('m1m2').style.animation = "mov1 5s infinite";
+}
+setInterval(changer2, 5000);
+function changer3() {
+    document.getElementById('login').style.background = "url('"+currentbg+"') no-repeat center center fixed";
+    document.getElementById('login').style.backgroundSize = "cover";
+}
+function changer4() {
+    document.getElementById('login').style.background = "url('"+currentbg2+"') no-repeat center center fixed";
+    document.getElementById('login').style.backgroundSize = "cover";
+}
+function resetch() {
+  currentbg = "";
+  currentbg2 = "";
+  document.getElementById('login').style.background = "black";
 }

@@ -18,21 +18,26 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
   <body>
-
-<div id='login' onclick='start()'>
-<h1><i class='material-icons' style='margin:none;padding:none;font-size:80px;transform: translate(0px, 0px);'>&#xe037;</i></h1>
+<div id='login2'>
+  <button onmouseover='changer3()' class='music' id='m1m1' onclick='start2()'>▶</button>
+  <button onmouseover='changer4()' class='music' id='m1m2' onclick='start()'>▶</button>
+</div>
+<div id='login' onmouseover='resetch()'>
+  <til style='text-align: center;text-shadow: 2px 2px grey;background-color:rgba(50,50,50,0.65);padding:5px;width:100%;color:white;font-size:40px;position:fixed;backdrop-filter: blur(10px);'>Dom's Music</til>
+  
+<!--<h1><i class='material-icons' style='margin:none;padding:none;font-size:80px;transform: translate(0px, 0px);'>&#xe037;</i></h1>-->
 </div>
 <div id='pause' onclick='play()'>
 </div>
 <div id='pausep'></div>
 <span id='pp' onclick='pause()'><i class='material-icons' style='margin:none;padding:none;font-size:30px;transform: translate(0px, 0px);'>&#xe034;</i></span>
-<div id='img2' onclick='start()'></div>
+<div id='img2' onclick='start3()'></div>
 <span id='mname'></span>
 <span id='loop' onclick='loop()'><i class='material-icons' style='margin:none;padding:none;font-size:20px;transform: translate(0px, 2px);'>&#xe040;</i></span>
 <span id='time1'></span>
 <span id='time2'></span>
 
-<img id='img' src="" onclick='start()'/>
+<img id='img' src="" onclick='start3()'/>
 <div class='barh'>
   <div id='bar'></div>
 </div>
