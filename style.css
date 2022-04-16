@@ -34,7 +34,7 @@ body {
   height: 100vh;
   width: 100vw;
   display:flex;
-  
+  filter: blur(10px);
 }
 #login {
   z-index:300;
@@ -120,6 +120,7 @@ body {
   margin-top: -25%;
   margin-left: -25%;
   display:none;
+  
 }
 .barh {
   width:100%;
