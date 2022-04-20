@@ -29,6 +29,32 @@ body {
   transform: rotate(360deg);
   transition:2s;
 }
+.prem {
+  height:40px;
+  width:100%;
+}
+.prem div {
+  height:40px;
+  width:40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.prem span {
+  margin-left:5px;
+  color:white;
+}
+#prem {
+  display:none;
+  background-color:rgba(0, 0, 0, 0.5);
+  color:white;
+  position: fixed;
+  top:0;
+  left:0;
+  padding:10px 20px;
+  z-index:4;
+  width:50%;
+  backdrop-filter: blur(10px);
+}
 #img2 {
   background-size: 100%;
   height: 100vh;
@@ -120,6 +146,7 @@ body {
   left:50%;
   margin-top: -25%;
   margin-left: -25%;
+  box-shadow:0px 0px 20px 2px black;
   display:none;
   
 }

@@ -14,6 +14,49 @@ var starty = 0;
 var currentbg = "";
 var currentbg2 = "";
 
+function openpre() {
+  document.getElementById('prem').style.display = "block";
+  document.getElementById('prem').innerHTML = "";
+  if (starty == 1) {
+    for (var i = 0; i < musicname.length;i++) {
+      document.getElementById('prem').innerHTML += "<div class='prem' onclick='spstart("+i+");'><div style='background:"+musicpic[i]+";'></div><span>"+musicname[i]+"</span></div>";
+    }
+  }
+  else {
+    for (var i = 0; i < tmusicname.length;i++) {
+      document.getElementById('prem').innerHTML += "<div class='prem' onclick='spstart("+i+");'><div style='background:"+tmusicpic[i]+";'></div><span>"+tmusicname[i]+"</span></div>";
+    }
+  }
+}
+function spstart(song1) {
+  document.getElementById('prem').style.display = "none";
+  pre = [];
+  if (starty == 1) {
+    var cmusic = song1;
+  document.getElementById('tt').innerHTML = "Dom's Music("+musicname[cmusic]+")";
+    document.getElementById('musicid').src = "nmusic/"+music[cmusic];
+    document.getElementById('mname').innerHTML = musicname[cmusic];
+    pre.push(musicname[cmusic]);
+    document.getElementById('img').src = "npics/"+musicpic[cmusic];
+    document.getElementById('img2').style.background = "url('npics/"+musicpic[cmusic]+"') no-repeat center center fixed";
+    document.getElementById('img2').style.backgroundSize = "cover";
+  }
+  else {
+    var cmusic = song1;
+    document.getElementById('tt').innerHTML = "Dom's Music("+tmusicname[cmusic]+")";
+    document.getElementById('musicid').src = "music/"+tmusic[cmusic];
+    document.getElementById('mname').innerHTML = tmusicname[cmusic];
+    pre.push(tmusicname[cmusic]);
+    document.getElementById('img').src = "pics/"+tmusicpic[cmusic];
+    document.getElementById('img2').style.background = "url('pics/"+tmusicpic[cmusic]+"') no-repeat center center fixed";
+    document.getElementById('img2').style.backgroundSize = "cover";
+  }
+    document.getElementById("music").load();
+    document.getElementById("music").play();
+    document.getElementById("music").onended = function() {
+    start3();
+    };
+}
 function start() {
   starty = 1;
   document.getElementById('login').style.display = 'none';
