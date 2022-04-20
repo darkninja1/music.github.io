@@ -58,7 +58,7 @@ body {
   top:0;
   left:0;
   padding:20px 20px;
-  z-index:4;
+  z-index:302;
   width:70%;
   height:50%;
   backdrop-filter: blur(10px);
@@ -142,7 +142,7 @@ body {
   padding:10px;
   color:white;
   background-color:rgba(0,0,0,0.5);
-  z-index:3;
+  z-index:301;
   backdrop-filter: blur(10px);
 }
 #img {
