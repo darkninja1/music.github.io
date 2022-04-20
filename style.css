@@ -32,6 +32,7 @@ body {
 .prem {
   height:40px;
   width:100%;
+  margin:10px 0px;
 }
 .prem:hover span {
   color:cyan;
