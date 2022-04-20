@@ -19,12 +19,12 @@ function openpre() {
   document.getElementById('prem').innerHTML = "";
   if (starty == 1) {
     for (var i = 0; i < musicname.length;i++) {
-      document.getElementById('prem').innerHTML += "<div class='prem' onclick='spstart("+i+");'><div style='background:"+musicpic[i]+";'></div><span>"+musicname[i]+"</span></div>";
+      document.getElementById('prem').innerHTML += "<div class='prem' onclick='spstart("+i+");'><div1 style='background:url(npics/"+musicpic[i]+");'></div1><span>"+musicname[i]+"</span></div>";
     }
   }
   else {
     for (var i = 0; i < tmusicname.length;i++) {
-      document.getElementById('prem').innerHTML += "<div class='prem' onclick='spstart("+i+");'><div style='background:"+tmusicpic[i]+";'></div><span>"+tmusicname[i]+"</span></div>";
+      document.getElementById('prem').innerHTML += "<div class='prem' onclick='spstart("+i+");'><div1 style='background:url(pics/"+tmusicpic[i]+");'></div1><span>"+tmusicname[i]+"</span></div>";
     }
   }
 }

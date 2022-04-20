@@ -33,7 +33,11 @@ body {
   height:40px;
   width:100%;
 }
-.prem div {
+.prem:hover span {
+  color:cyan;
+  cursor:pointer;
+}
+.prem div1 {
   height:40px;
   width:40px;
   background-size: cover;
@@ -53,7 +57,9 @@ body {
   padding:10px 20px;
   z-index:4;
   width:50%;
+  height:50%;
   backdrop-filter: blur(10px);
+  overflow-y:auto;
 }
 #img2 {
   background-size: 100%;
