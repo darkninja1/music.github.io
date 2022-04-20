@@ -52,7 +52,7 @@ function spstart(song1) {
     document.getElementById('img2').style.backgroundSize = "cover";
   }
     document.getElementById("music").load();
-    document.getElementById("music").play();
+play();
     document.getElementById("music").onended = function() {
     start3();
     };
@@ -83,7 +83,7 @@ function start() {
     
     
     document.getElementById("music").load();
-    document.getElementById("music").play();
+    play();
     document.getElementById("music").onended = function() {
     start();
     };
@@ -115,7 +115,7 @@ function start2() {
     
     
     document.getElementById("music").load();
-    document.getElementById("music").play();
+    play();
     document.getElementById("music").onended = function() {
     start2();
     };
