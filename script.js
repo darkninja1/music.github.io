@@ -2,9 +2,9 @@ var tmusic = ['ll.mp3','Hunter.mp3','Jifuragi.mp3','Night Of Sicily.mp3','Un dia
 var tmusicname = ['무법 변호사 Lawless Lawyer Main Title','Hunter x Hunter','Jifuragi','Night Of Sicily','Un diavolo scaccia l′altro','Code Gease','Mr. Sunshine','The Da Vinci Code',"The King's Avatar - 全职高手  「Extended OP」Xin Yang BY -Zhang Jie","The King's Avatar Ost Full Album",'JJ Lin – Lose Control _ Shang-Chi - The Album','FairyTail Main Theme OP1','Official髭男dism - Pretender','Haruka Kanata','ONE OK ROCK - The Beginning (Road to Rurouni Kenshin The Final 2020)','Durarara!! Opening 1'];
 var tmusicpic = ['ll.png','Hunter.jpg','v3.jpg','v2.png','v1.jpeg','Code.jpg','sunshine.jpg','code.jpg','king.jpg','king2.jpg','ring.jpg','FT1.jpeg','pre.png','kanata.jpg','OOK.png','dd.png'];
 
-var music = ['royal.mp3','kino.mp3','elena.mp3','detective.mp3','irregular.mp3','vanitas.mp3','jorm.mp3','crusade.mp3','hero.mp3','world.mp3','magi.mp3'];
-var musicname = ["Oushitsu Kyoushi Haine Ending FULL - Doko ni Ita no sa!～Prince Night ／ P4 with T「王室教師ハイネ ED」","Kino's Journey -the Beautiful World- Ending _ Satodama no Tsuki","Wandering Witch: The Journey of Elaina","The Detective is Already Dead","The Irregular at Magic High School","ヴァニタスの 手記 カルテ (Vanitasu no Karute)","Jormungand (ヨルムンガンド, Yorumungando)","Our Last Crusade or the Rise of a New World","The Legendary Hero's","World End","Magi Opening 2"];
-var musicpic = ["royal.jpg","kino.png","elena.jpg","detective.jpg","irregular.jpg","vanitas.jpg","jorm.jpg","crusade.jpeg",'hero.jpg','world.jpeg','magi.jpg'];
+var music = ['royal.mp3','kino.mp3','elena.mp3','detective.mp3','irregular.mp3','vanitas.mp3','jorm.mp3','crusade.mp3','hero.mp3','world.mp3','magi.mp3','over.mp3'];
+var musicname = ["Oushitsu Kyoushi Haine Ending FULL - Doko ni Ita no sa!～Prince Night ／ P4 with T「王室教師ハイネ ED」","Kino's Journey -the Beautiful World- Ending _ Satodama no Tsuki","Wandering Witch: The Journey of Elaina","The Detective is Already Dead","The Irregular at Magic High School","ヴァニタスの 手記 カルテ (Vanitasu no Karute)","Jormungand (ヨルムンガンド, Yorumungando)","Our Last Crusade or the Rise of a New World","The Legendary Hero's","World End","Magi Opening 2","Overlord Season 3 – Opening Theme – Voracity"];
+var musicpic = ["royal.jpg","kino.png","elena.jpg","detective.jpg","irregular.jpg","vanitas.jpg","jorm.jpg","crusade.jpeg",'hero.jpg','world.jpeg','magi.jpg','over.jpg'];
 var pre = [];
 var m1 = false;
 var logins = false;

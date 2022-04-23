@@ -180,7 +180,7 @@ body {
   top:0;
   right:0;
   padding:10px;
-  z-index:4;
+  z-index:302;
   display:none;
   backdrop-filter: blur(10px);
 }
