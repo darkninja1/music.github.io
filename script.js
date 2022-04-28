@@ -13,8 +13,17 @@ var prevol = 1;
 var starty = 0;
 var currentbg = "";
 var currentbg2 = "";
-
+var preopen = 0;
 function openpre() {
+  if (preopen == 0) {
+    openpre2();
+    preopen = 1;
+  }
+  else { document.getElementById('prem').style.display = "none";
+        preopen = 0;
+  }
+}
+function openpre2() {
   document.getElementById('prem').style.display = "block";
   document.getElementById('prem').innerHTML = "";
   if (starty == 1) {
