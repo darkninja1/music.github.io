@@ -55,14 +55,17 @@ body {
   background-color:rgba(0, 0, 0, 0.5);
   color:white;
   position: fixed;
-  top:45px;
+  top:0px;
   left:0;
-  padding:20px 20px;
+  padding:50px 20px;
   z-index:302;
   width:70%;
-  height:50%;
+  height:100%;
   backdrop-filter: blur(10px);
   overflow-y:auto;
+}
+#prem::-webkit-scrollbar {
+  display: none;
 }
 #img2 {
   background-size: 100%;
@@ -142,7 +145,7 @@ body {
   padding:10px;
   color:white;
   background-color:rgba(0,0,0,0.5);
-  z-index:301;
+  z-index:303;
   backdrop-filter: blur(10px);
   transition:0.2s linear;
 }
@@ -179,19 +182,29 @@ body {
   transition:1s linear;
 } 
 #pp {
-  background-color:rgba(0, 0, 0, 0.5);
-  color:white;
+  background-color:white;
+  color:black;
   position: fixed;
-  top:0;
-  right:0;
-  padding:10px;
+  top:10px;
+  right:10px;
+  width:50px;
+  height:50px;
+  text-align:center;
   z-index:302;
   display:none;
+  
   backdrop-filter: blur(10px);
+  border-radius:50%;
+  transition:0.2s linear;
 }
 #pp:hover {
-  color: rgb(0, 183, 255);
+
   cursor:pointer;
+  opacity:0.85;
+  transform: scale(1.1);
+}
+#pp:active {
+  opacity:0.75;
 }
 #loop {
   background-color:rgba(0, 0, 0, 0.5);
@@ -202,6 +215,7 @@ body {
   padding:10px 20px;
   z-index:4;
   backdrop-filter: blur(10px);
+  transition:0.2s linear;
 }
 #loop:hover {
   color: rgb(0, 183, 255);
