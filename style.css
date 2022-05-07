@@ -38,6 +38,7 @@ body {
   color:black;
   background-color:rgba(255,255,255,0.4);
   cursor:pointer;
+  opacity:0.8;
 }
 .prem img {
   vertical-align:middle;
