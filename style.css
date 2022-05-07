@@ -30,25 +30,27 @@ body {
   transition:2s;
 }
 .prem {
-  min-height:40px;
-  max-height:100px;
   width:100%;
   margin:10px 0px;
+  transition:0.2s linear;
 }
-.prem:hover span {
-  color:cyan;
+.prem:hover {
+  color:black;
+  background-color:rgba(255,255,255,0.4);
   cursor:pointer;
 }
 .prem img {
   vertical-align:middle;
-  height:40px;
-  width:40px;
-  background-size: cover;
+  height:60px;
+  width:60px;
+  background-size: 100% cover;
   background-repeat: no-repeat;
+  object-fit: cover;
 }
 .prem span {
-  margin-left:5px;
+  margin-left:10px;
   color:white;
+  font-size:20px;
 }
 #prem {
   display:none;
@@ -57,7 +59,7 @@ body {
   position: fixed;
   top:0px;
   left:0;
-  padding:50px 20px;
+  padding:50px 10px;
   z-index:302;
   width:70%;
   height:100%;

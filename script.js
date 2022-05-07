@@ -29,6 +29,8 @@ function openpre2() {
   if (starty == 1) {
     for (var i = 0; i < musicname.length;i++) {
       document.getElementById('prem').innerHTML += "<div class='prem' onclick='spstart("+i+");'><img src='npics/"+musicpic[i]+"' /><span>"+musicname[i]+"</span></div>";
+    
+    
     }
   }
   else {
@@ -36,6 +38,7 @@ function openpre2() {
       document.getElementById('prem').innerHTML += "<div class='prem' onclick='spstart("+i+");'><img src='pics/"+tmusicpic[i]+"' /><span>"+tmusicname[i]+"</span></div>";
     }
   }
+  document.getElementById('prem').innerHTML += "<br><br><br>";
 }
 function spstart(song1) {
   document.getElementById('prem').style.display = "none";
