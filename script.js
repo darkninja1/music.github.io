@@ -23,6 +23,12 @@ function openpre() {
         preopen = 0;
   }
 }
+function changer3() {
+   var jjj2 = ['bg1.jpg','bg2.jpg','bg3.jpg'];
+   var jjj = Math.floor(Math.random() * jjj2.length); document.getElementById('login').style.background = "url('bg/"+jjj2[jjj]+"') no-repeat center center fixed";
+    document.getElementById('login').style.backgroundSize = "cover";
+}
+changer3();
 function openpre2() {
   document.getElementById('prem').style.display = "block";
   document.getElementById('prem').innerHTML = "";
@@ -318,14 +324,8 @@ function changer2() {
    document.getElementById('m1m2').style.backgroundSize = "cover";document.getElementById('m1m2').style.animation = "mov1 5s infinite";
 }
 setInterval(changer2, 5000);
-function changer3() {
-    document.getElementById('login').style.background = "url('"+currentbg+"') no-repeat center center fixed";
-    document.getElementById('login').style.backgroundSize = "cover";
-}
-function changer4() {
-    document.getElementById('login').style.background = "url('"+currentbg2+"') no-repeat center center fixed";
-    document.getElementById('login').style.backgroundSize = "cover";
-}
+
+
 function resetch() {
   currentbg = "";
   currentbg2 = "";
