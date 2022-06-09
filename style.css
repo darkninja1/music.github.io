@@ -7,7 +7,7 @@ body {
   overlow-x:hidden;
 }
 body::after {
-  content: url('pics/FT1.jpeg') url('pics/Hunter.jpg') url('pics/v3.jpg') url('pics/v2.jpg') url('pics/v1.jpeg') url('pics/Code.jpg') url('pics/sunshine.jpg') url('pics/code.jpg') url('pics/king.jpg') url('pics/king2.jpg') url('pics/ring.jpg') url('pics/FT1.jpeg') url('pics/pre.png') url('pics/kanata.jpg') url('pics/OOK.png') url('pics/dd.png') url('pics/lemon.jpg') url('pics/peace.jpg') url('pics/sisyphus.jpg') url('pics/it.webp') url('npics/royal.jpg') url('npics/kino.png') url('npics/elena.jpg') url('npics/detective.jpg') url('npics/irregular.jpg') url('npics/vanitas.jpg') url('npics/jorm.jpg') url('npics/crusade.jpeg') url('npics/hero.jpg') url('npics/world.jpeg') url('npics/magi.jpg') url('npics/over.jpg') url('npics/seven.jpg') url('npics/spare.png');
+  content: url('pics/FT1.jpeg') url('pics/Hunter.jpg') url('pics/v3.jpg') url('pics/v2.jpg') url('pics/v1.jpeg') url('pics/Code.jpg') url('pics/sunshine.jpg') url('pics/code.jpg') url('pics/king.jpg') url('pics/king2.jpg') url('pics/ring.jpg') url('pics/FT1.jpeg') url('pics/pre.png') url('pics/kanata.jpg') url('pics/OOK.png') url('pics/dd.png') url('pics/lemon.jpg') url('pics/peace.jpg') url('pics/sisyphus.jpg') url('pics/it.webp') url('npics/royal.jpg') url('npics/kino.png') url('npics/elena.jpg') url('npics/detective.jpg') url('npics/irregular.jpg') url('npics/vanitas.jpg') url('npics/jorm.jpg') url('npics/crusade.jpeg') url('npics/hero.jpg') url('npics/world.jpeg') url('npics/magi.jpg') url('npics/over.jpg') url('npics/seven.jpg') url('npics/spare.png') url('goback.png');
   display:none;
 }
 .music {
