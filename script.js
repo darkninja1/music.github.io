@@ -44,7 +44,14 @@ function openpre2() {
       document.getElementById('prem').innerHTML += "<div class='prem' onclick='spstart("+i+");'><img src='pics/"+tmusicpic[i]+"' /><span>"+tmusicname[i]+"</span></div>";
     }
   }
+  document.getElementById('prem').innerHTML += "<div class='prem' onclick='menu();'><img src='goback.png' /><span>Open Menu</span></div>";
   document.getElementById('prem').innerHTML += "<br><br><br>";
+}
+function menu() {
+ pause(); document.getElementById('login').style.display = 'block';
+  document.getElementById('login2').style.display = 'block';
+  document.getElementById('img').style.display = 'none';
+  document.getElementById('pp').style.display = "none";
 }
 function spstart(song1) {
   document.getElementById('prem').style.display = "none";
