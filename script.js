@@ -51,8 +51,6 @@ function menu() {
   openpre();
  pause(); document.getElementById('login').style.display = 'block';
   document.getElementById('login2').style.display = 'block';
-  document.getElementById('slidecov').style.display = 'block';
-  document.getElementById('loop').style.display = 'block';
   document.getElementById('img').style.display = 'none';
   document.getElementById('mname').style.display = 'none';
   document.getElementById('pp').style.display = "none";
@@ -88,6 +86,8 @@ play();
 }
 function start() {
   starty = 1;
+   document.getElementById('slidecov').style.display = 'block';
+  document.getElementById('loop').style.display = 'block';
  document.getElementById('mname').style.display = 'block'; document.getElementById('login').style.display = 'none';
   document.getElementById('login2').style.display = 'none';
   document.getElementById('img').style.display = 'block';
@@ -120,6 +120,8 @@ function start() {
 }
 function start2() {
   starty = 2;
+   document.getElementById('slidecov').style.display = 'block';
+  document.getElementById('loop').style.display = 'block';
  document.getElementById('mname').style.display = 'block';
   document.getElementById('login').style.display = 'none';
   document.getElementById('login2').style.display = 'none';
