@@ -144,7 +144,7 @@ body::after {
 #vol {
   color:white;
   position:absolute;
-  top:12%;
+  top:5%;
   left:20px;
   cursor:pointer;
 }
