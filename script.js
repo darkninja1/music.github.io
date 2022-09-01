@@ -17,9 +17,10 @@ var preopen = 0;
 function openpre() {
   if (preopen == 0) {
     openpre2();
+    document.getElementById('loop').style.display = 'none';
     preopen = 1;
   }
-  else { document.getElementById('prem').style.display = "none";
+  else { document.getElementById('prem').style.display = "none";document.getElementById('loop').style.display = 'block';
         preopen = 0;
   }
 }
@@ -30,6 +31,7 @@ function changer3() {
 }
 changer3();
 function openpre2() {
+  
   document.getElementById('prem').style.display = "block";
   document.getElementById('prem').innerHTML = "";
   if (starty == 1) {
@@ -50,6 +52,8 @@ function openpre2() {
 function menu() {
   openpre();
  pause(); document.getElementById('login').style.display = 'block';
+   document.getElementById('slidecov').style.display = 'none';
+  document.getElementById('loop').style.display = 'none';
   document.getElementById('login2').style.display = 'block';
   document.getElementById('img').style.display = 'none';
   document.getElementById('mname').style.display = 'none';
