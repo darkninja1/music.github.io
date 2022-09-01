@@ -341,3 +341,7 @@ function resetch() {
   currentbg2 = "";
   document.getElementById('login').style.background = "black";
 }
+var ball = 0;
+function openclosevol() {
+  if (ball == 0) {document.getElementById("slidecov").style.width="235px";document.getElementById("slide").style.display="block";ball=1;}else {document.getElementById("slidecov").style.width="70px";document.getElementById("slide").style.display="none";ball=0;}
+}

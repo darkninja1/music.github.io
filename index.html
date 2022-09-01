@@ -32,18 +32,21 @@
 </div>
 <div id='pausep'></div>
 <span id='pp' onclick='space1();'><i class='material-icons' style='margin:none;padding:none;font-size:30px;transform: translate(0px, 0px);position:absolute;top:10px;left:10px;'>&#xe034;</i></span>
-<div id='img2' onclick='start3()'></div>
+
 <span id='mname' onclick='openpre();'></span>
 <span id='loop' onclick='loop()'><i class='material-icons' style='margin:none;padding:none;font-size:20px;transform: translate(0px, 2px);'>&#xe040;</i></span>
 <span id='time1'></span>
 <span id='time2'></span>
 <div id='prem'></div>
+    <div id='slidecov' onclick='openclosevol();'>
+<div id='vol'><i class="material-icons" style='margin:none;padding:none;font-size:30px;transform: translate(0px, 0px);'>&#xe050;</i></div>
+<input type="range" min="0" max="100" value="100" id="slide" onchange='vol()'></div>
+<div id='img2' onclick='start3()'></div>
 <img id='img' src="" onclick='start3();document.getElementById("prem").style.display = "none";'/>
 <div class='barh'>
   <div id='bar'></div>
 </div>
-<label for='slide' id='vol'><i class="material-icons" style='margin:none;padding:none;font-size:30px;transform: translate(0px, 7px);'>&#xe050;</i></label>
-<input type="range" min="0" max="100" value="100" id="slide" onchange='vol()'>
+    
 
 <audio class='audio' id='music' style="display:none;" ontimeupdate="up();">
         <source id='musicid' src='' type='audio/mpeg'>
