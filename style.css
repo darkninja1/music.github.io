@@ -234,9 +234,10 @@ body::after {
   color:white;
   position: fixed;
   bottom:10%;
+  display:none;
   left:10px;
   padding:10px 20px;
-  z-index:4;
+  z-index:303;
   border-radius: 20px;
   border:1px solid rgba(255,255,255,0.65);
   backdrop-filter: blur(10px);
@@ -248,8 +249,9 @@ body::after {
 }
 #slidecov {
    background-color:rgba(0, 0, 0, 0.5);
-  z-index:2;
+  z-index:303;
   position: fixed;
+  display:none;
   height:45px;
   width: 70px;
   bottom:10%;
