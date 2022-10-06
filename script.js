@@ -14,8 +14,9 @@ var starty = 0;
 var currentbg = "";
 var currentbg2 = "";
 var preopen = 0;
-if (!localStorage.getItem('Volume') === null) {
+if (!(localStorage.getItem('Volume') === null)) {
   var tobe = parseInt(localStorage.getItem('Volume'));
+  //alert(tobe);
   document.getElementById("slide").value = tobe;
   vol();
 }
@@ -298,7 +299,7 @@ function vol() {
   else {
     document.getElementById('vol').innerHTML = "<i class='material-icons' style='margin:none;padding:none;font-size:30px;transform: translate(0px, 7px);'>&#xe050;</i>";
   }
-  localStorage.setItem('Volume',iv);
+  localStorage.setItem('Volume',''+iv+'');
   document.getElementById("music").volume = (iv/100);
 }
 
